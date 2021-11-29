@@ -1,5 +1,5 @@
 # CORS ongelmien korjaaminen
-Jotkin avoimet rajapinnat aiheuttavat selaimessa CORS-virheitä. Ne voidaan ohittaa käyttämällä välityspalvelinta kuten esim. cors anywhere: 
+Jotkin avoimet rajapinnat aiheuttavat selaimessa [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors)-virheitä. Ne voidaan ohittaa käyttämällä välityspalvelinta kuten esim. cors anywhere: 
 https://cors-anywhere.herokuapp.com/
 
 ### Ohje:
