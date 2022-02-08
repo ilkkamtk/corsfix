@@ -6,4 +6,11 @@ https://allorigins.win/
    1. Lisää ennen fetch-komentoa muuttuja: `const proxy = 'https://api.allorigins.win/get?url=';`
    2. Lisää em rivin jälkeen toinen muuttuja, johon tallennat rajapinnan osoitteen parametreineen: `const haku = https://open-api.myhelsinki.fi/jne......';`
    3. Yhdistetään edelliset: `const url = proxy + encodeURIComponent(haku);`
-   4. Tehdään haku: `fetch(url).then(jne....`
+   4. Tehdään haku: 
+   ```javascript
+   fetch(url).then(data) {
+        console.log(JSON.parse(data.contents));
+        const apinData = JSON.parse(data.contents);
+   });
+   ```
+   6. Huomaa, että allOrigins laittaa rajapinnan vastauksen `contents` propertyn sisälle. Contents on pelkkää tekstiä, joten se pitää vielä muuttaa taulukoksi/olioksi JSON.parse() funktion avulla.
