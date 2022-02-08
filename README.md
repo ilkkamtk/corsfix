@@ -9,7 +9,7 @@ https://allorigins.win/
    4. Tehdään haku: 
    ```javascript
    fetch(url).then(data) {
-        console.log(JSON.parse(data.contents));
+        console.log(data.contents);
         const apinData = JSON.parse(data.contents);
    });
    ```
